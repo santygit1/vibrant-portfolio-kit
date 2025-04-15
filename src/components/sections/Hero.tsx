@@ -1,10 +1,7 @@
-
 import { ArrowDown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-
 const Hero = () => {
-  return (
-    <section id="home" className="min-h-screen relative flex items-center bg-gradient-to-br from-background to-secondary/50 pt-16">
+  return <section id="home" className="min-h-screen relative flex items-center bg-gradient-to-br from-background to-secondary/50 pt-16">
       <div className="absolute inset-0 opacity-10">
         <div className="absolute inset-y-0 right-0 w-1/2 bg-primary/5" />
         <div className="absolute bottom-0 left-0 w-3/4 h-1/2 bg-gradient-to-tr from-primary/5 to-transparent" />
@@ -18,7 +15,7 @@ const Hero = () => {
             </span>
             
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-4">
-              Hello, I'm <span className="text-gradient">John Doe</span>
+              Hello, I'm <span className="text-gradient">Santhosh Kumar</span>
             </h1>
             
             <p className="text-xl text-muted-foreground mb-8 max-w-2xl">
@@ -51,26 +48,16 @@ const Hero = () => {
             <div className="relative">
               <div className="absolute -left-6 -top-6 w-64 h-64 bg-primary/10 rounded-full blur-3xl" />
               <div className="relative z-10 bg-card border border-border rounded-2xl overflow-hidden shadow-xl">
-                <img
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3"
-                  alt="Profile"
-                  className="w-full h-full object-cover"
-                />
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3" alt="Profile" className="w-full h-full object-cover" />
               </div>
             </div>
           </div>
         </div>
       </div>
       
-      <a
-        href="#about"
-        className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce w-10 h-10 flex items-center justify-center bg-secondary rounded-full"
-        aria-label="Scroll to About section"
-      >
+      <a href="#about" className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce w-10 h-10 flex items-center justify-center bg-secondary rounded-full" aria-label="Scroll to About section">
         <ArrowDown size={20} />
       </a>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
